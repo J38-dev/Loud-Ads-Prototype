@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<!--
+	Alpha by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Loud Ads - About Us</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+		<header id="header">
+	<h1><a href="index.html">Loud Ads</a></h1>
+	<nav id="nav">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li>
+				<a href="#" class="icon solid fa-angle-down">More</a>
+				<ul>
+					<li><a href="about.html">About us</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</li>
+			<li><a href="contact.html" class="button">Reach Out</a></li>
+		</ul>
+	</nav>
+</header>
+
+
+			<!-- Main -->
+				<section id="main" class="container">
+					<header>
+						<h2><b>About</b> us</h2>
+						<p>Loud Ads creates bold graphic design that cuts through the noise and leaves a lasting impression.</p>
+					</header>
+					<div class="box">
+						<span class="image featured"><img src="images/Typography Design Studio Package Price List A4 Document About us.png" alt="" /></span>
+						<h3>Who are we?</h3>
+						<p>Loud Ads is a graphic design studio shaped by street influence and creative discipline. We create bold branding, digital design, and promotional visuals that communicate with confidence, precision, and purpose, designed to stand out without losing authenticity.</p>
+						<div class="row">
+							<div class="row-6 row-12-mobilep">
+								<h3>What inspired </h3>
+								<p>Rooted in the streets of Ennerdale, our work is inspired by everyday life, raw creativity, and the culture that shapes our community. We blend street influence with thoughtful design, focusing on art, precision, and the small details that make a big impact.</p>
+							</div>
+							<div class="row-6 row-12-mobilep">
+								<p>Our approach is built on balance, combining street influence with clean, intentional design. We pay close attention to detail, from typography and layout to color and spacing, ensuring every project feels refined while still carrying character. The goal is simple: to create visual work that feels authentic, thoughtful, and made with purpose.</p>
+							</div>
+						</div>
+					</div>
+				</section>
+
+<!-- Portfolio Section -->
+<section id="main" class="container">
+
+<div class="box">
+    <h3>Our Portfolio</h3>
+    <p>Check out some of our work, inspired by the streets of Ennerdale.</p>
+
+    <div class="portfolio-slideshow">
+        <!-- Slides -->
+        <div class="slide active">
+            <img src="images/Blue Black Bold Type Maximalist Gym Poster.png" alt="Design 1">
+        </div>
+        <div class="slide">
+            <img src="images/Navy Blue Brown Steak Meat Weekly Menu.png" alt="Design 2">
+        </div>
+        <div class="slide">
+            <video controls>
+                <source src="videos/Red Minimalist Visual Hook Tips Instagram Reel Video Background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="slide">
+            <img src="images/Dark Green Simple Modern House For Sale Real Estate Flyer.png" alt="Design 3">
+        </div>
+        <div class="slide">
+            <img src="images/Neg Loudy.png" alt="Design 4">
+        </div>
+       <div class="slide">
+            <img src="images/jeff Cuts Price List Update.png" alt="Design 5">
+        </div>
+
+    </div>
+
+    <!-- Navigation -->
+    <div class="slideshow-nav">
+        <button id="prevSlide">&#10094; Prev</button>
+        <button id="nextSlide">Next &#10095;</button>
+    </div>
+</div>
+</section>
+
+<!-- Slideshow Script -->
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.portfolio-slideshow .slide');
+const totalSlides = slides.length;
+
+function showSlide(index) {
+    slides.forEach(slide => {
+        slide.style.display = 'none';
+    });
+    slides[index].style.display = 'block';
+}
+
+// Prev/Next Buttons
+document.getElementById('prevSlide').addEventListener('click', () => {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    showSlide(currentSlide);
+});
+
+document.getElementById('nextSlide').addEventListener('click', () => {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    showSlide(currentSlide);
+});
+
+// Initialize first slide
+showSlide(currentSlide);
+
+// Auto-slide every 5 seconds
+setInterval(() => {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    showSlide(currentSlide);
+}, 5000);
+</script>
+
+<!-- Portfolio Slideshow Styles -->
+<style>
+.portfolio-slideshow {
+    position: relative;
+    overflow: hidden;
+    margin: 1.5em auto;
+    max-width: 90%; /* Keeps centered with page layout */
+}
+
+.portfolio-slideshow .slide {
+    display: none;
+    text-align: center;
+}
+
+.portfolio-slideshow .slide img,
+.portfolio-slideshow .slide video {
+    max-width: 100%;
+    max-height: 300px; /* Limits how tall it gets */
+    width: auto;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain; /* Keeps image/video proportions */
+}
+
+.slideshow-nav {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.slideshow-nav button {
+    background-color: #222;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1.2em;
+    margin: 0 0.5em;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.slideshow-nav button:hover {
+    background-color: #555;
+}
+</style>
+
+			<!-- Footer -->
+					<footer id="footer">
+					<ul class="icons">
+<li><a href="https://wa.me/27711507774" class="icon brands fa-whatsapp"><span class="label">Whatsapp</span></a></li>
+						<li><a href="https://www.facebook.com/LoudAds/" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.instagram.com/LoudAds/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="https://github.com/J38-dev" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<li><a href="https://g.page/r/CXvdtxXvmGKMEBM/review" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
+
+
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Loud Ads. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
